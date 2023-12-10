@@ -1,0 +1,68 @@
+CHIP CPU {
+
+    IN  inM[16],         // M value input  (M = contents of RAM[A])
+        instruction[16], // Instruction for execution
+        reset;           // Signals whether to re-start the current
+                         // program (reset==1) or continue executing
+                         // the current program (reset==0).
+
+    OUT outM[16],        // M value output
+        writeM,          // Write to M? 
+        addressM[15],    // Address in data memory (of M)
+        pc[15];          // address of next instruction
+
+    PARTS:
+    // Put your code here:
+
+    // control
+    
+    // determine Instrcution A 
+    Not(in=instruction[15], out=MUXA);
+    
+    // OP_ALU use instruction[6..11]     
+
+    // Mux_ALU = instruction[12]
+    
+    // WA
+    And(a=instruction[15], b=instruction[5], out=writeA);
+    Not(in=instruction[15], out=Acommand);
+    Or(a=writeA, b=Acommand, out=WA);
+    
+    // WD 
+    And(a=instruction[15], b=instruction[4], out=WD);
+
+    // component
+    // Reg D
+    DRegister(in=ALUout ,load=WD ,out=ALUX);
+    
+    // Reg A    
+    Mux16(a=ALUout, b=instruction, sel=MUXA, out=AIN);    
+    ARegister(in=AIN ,load=WA ,out= AOUT);
+    
+    // To ALU_Y
+    Mux16(a=AOUT, b=inM, sel=instruction[12], out=ALUY);
+
+    ALU(x=ALUX ,y=ALUY ,zx=instruction[11] ,nx=instruction[10] ,zy=instruction[9] ,ny=instruction[8] ,f=instruction[7] ,no=instruction[6] ,out=ALUout ,zr=outzr ,ng=outng);
+    
+    // address M
+    Or16(a=false,b=AOUT,out[0..14]=addressM);
+    Or16(a=false,b=ALUout,out=outM);
+    And(a=instruction[15], b=instruction[3], out=writeM);
+
+    // The counter
+
+    // control WPC
+    Not(in=outng, out=notoutng);
+    Not(in=outzr, out=notoutzr);
+    And(a=notoutng, b=notoutzr, out=gt);
+    And(a=instruction[2], b=outng, out=less);
+    And(a=instruction[1], b=outzr, out=eq);
+    And(a=gt, b=instruction[0], out=greater);
+    Or(a=less, b=eq, out=lessOReq);
+    Or(a=lessOReq, b=greater, out=condi);
+    And(a=condi, b=instruction[15], out=WPC);
+
+    // control PCINC
+    Not(in=WPC, out=PCINC);
+    PC(in=AOUT ,load=WPC ,inc=PCINC ,reset=reset ,out[0..14]=pc);    
+}
