@@ -1,0 +1,13 @@
+class Jet{
+    //  private variable
+    field int life;
+    
+    constructor Jet new(){
+        let life = 10;
+    }
+    
+    method void move_right (){
+        
+    }
+
+}

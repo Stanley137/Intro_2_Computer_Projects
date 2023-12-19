@@ -1,0 +1,24 @@
+class game {
+    // attributes and methods
+    field Jet jet; // our flight
+    field Map map; // map(building、enemy)
+    field int level;
+    constructor game new(){
+        let jet = jet.new();
+        let map = map.new(0);
+        let level = 0;
+        return this;
+    }
+    method void run () {
+        do map.init(level);
+        var char key;
+        while(jet.life != 0){
+            let key = Keyboard.keyPressed();
+            
+        }
+    }
+    method void over(){
+        // clean all memory and data
+        // draw some pictures
+    }
+}
