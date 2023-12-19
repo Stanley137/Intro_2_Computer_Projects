@@ -1,0 +1,8 @@
+class Main {
+    function void main() {
+        var Jet jet;
+        let jet = Jet.new(30, 15);
+        do jet.move_right();
+        return;
+    }
+}
