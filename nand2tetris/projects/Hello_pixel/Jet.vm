@@ -1,5 +1,5 @@
 function Jet.new 0
-push constant 5
+push constant 7
 call Memory.alloc 1
 pop pointer 0
 push constant 10
@@ -4939,84 +4939,6 @@ push constant 0
 call Memory.poke 2
 pop temp 0
 push local 0
-push constant 960
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 992
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 33
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 65
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 97
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 129
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 161
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 193
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 225
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 257
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 289
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 321
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
 push constant 353
 add
 push constant 1
@@ -5064,93 +4986,33 @@ add
 push constant 0
 call Memory.poke 2
 pop temp 0
-push local 0
-push constant 609
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 641
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 673
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 705
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 737
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 769
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 801
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 833
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 865
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 897
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 929
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 961
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 993
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
 push constant 0
 return
-function Jet.draw1_d 1
+function Jet.draw_down 1
 push argument 0
 pop pointer 0
 push constant 16384
 push argument 1
 add
 pop local 0
+push local 0
+push constant 32
+sub
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 64
+sub
+push constant 0
+call Memory.poke 2
+pop temp 0
+push local 0
+push constant 96
+sub
+push constant 0
+call Memory.poke 2
+pop temp 0
 push local 0
 push constant 384
 call Memory.poke 2
@@ -5314,694 +5176,59 @@ push constant 384
 call Memory.poke 2
 pop temp 0
 push local 0
-push constant 832
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 864
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 896
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 928
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 960
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 992
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1024
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1056
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1088
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1120
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1152
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1184
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1216
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1248
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1280
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1312
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1344
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1376
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1408
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1440
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
 push constant 353
 add
-push constant 1
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 385
-add
-push constant 3
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 417
-add
-push constant 3
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 449
-add
-push constant 1
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 481
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 513
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 545
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 577
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 609
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 641
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 673
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 705
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 737
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 769
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 801
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 833
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 865
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 897
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 929
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 961
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 993
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1025
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1057
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1089
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push constant 0
-return
-function Jet.draw2_d 1
-push argument 0
-pop pointer 0
-push constant 16384
-push argument 1
-add
-pop local 0
-push local 0
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 32
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 64
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 96
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
 push constant 128
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 160
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 192
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 224
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 256
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 288
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 320
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 352
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 384
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 416
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 448
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 480
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 512
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 544
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 576
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 608
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 640
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 672
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 704
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 736
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 768
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 800
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 832
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 864
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 896
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 928
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 960
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 992
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1024
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1056
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1088
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1120
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1152
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1184
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1216
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1248
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1280
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1312
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1344
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1376
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1408
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1440
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 353
-add
+sub
 push constant 0
 call Memory.poke 2
 pop temp 0
 push local 0
 push constant 385
 add
+push constant 128
+sub
 push constant 0
 call Memory.poke 2
 pop temp 0
 push local 0
 push constant 417
 add
+push constant 128
+sub
 push constant 0
 call Memory.poke 2
 pop temp 0
 push local 0
 push constant 449
 add
+push constant 128
+sub
 push constant 0
 call Memory.poke 2
 pop temp 0
 push local 0
-push constant 481
+push constant 353
 add
-push constant 0
+push constant 1
 call Memory.poke 2
 pop temp 0
 push local 0
-push constant 513
+push constant 385
 add
-push constant 0
+push constant 3
 call Memory.poke 2
 pop temp 0
 push local 0
-push constant 545
+push constant 417
 add
-push constant 0
+push constant 3
 call Memory.poke 2
 pop temp 0
 push local 0
-push constant 577
+push constant 449
 add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 609
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 641
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 673
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 705
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 737
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 769
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 801
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 833
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 865
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 897
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 929
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 961
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 993
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1025
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1057
-add
-push constant 0
-call Memory.poke 2
-pop temp 0
-push local 0
-push constant 1089
-add
-push constant 0
+push constant 1
 call Memory.poke 2
 pop temp 0
 push constant 0
@@ -6009,14 +5236,29 @@ return
 function Jet.move_right 0
 push argument 0
 pop pointer 0
-push constant 32
 push pointer 0
 push this 1
 call Jet.trans_x_2jet 2
-call Math.multiply 2
+pop this 5
 push pointer 0
 push this 2
 call Jet.trans_y_2jet 2
+pop this 6
+push this 6
+push constant 16
+add
+push constant 511
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push constant 32
+push this 5
+call Math.multiply 2
+push this 6
 push constant 16
 call Math.divide 2
 add
@@ -6093,18 +5335,33 @@ return
 function Jet.move_left 0
 push argument 0
 pop pointer 0
-push constant 32
 push pointer 0
 push this 1
 call Jet.trans_x_2jet 2
-call Math.multiply 2
+pop this 5
 push pointer 0
 push this 2
 call Jet.trans_y_2jet 2
+pop this 6
+push constant 32
+push this 5
+call Math.multiply 2
+push this 6
 push constant 16
 call Math.divide 2
 add
 pop this 3
+push this 6
+push constant 16
+sub
+push constant 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
 push pointer 0
 push this 3
 call Jet.draw0 2
@@ -6177,14 +5434,29 @@ return
 function Jet.move_up 0
 push argument 0
 pop pointer 0
-push constant 32
 push pointer 0
 push this 1
 call Jet.trans_x_2jet 2
-call Math.multiply 2
+pop this 5
 push pointer 0
 push this 2
 call Jet.trans_y_2jet 2
+pop this 6
+push this 5
+push constant 16
+sub
+push constant 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push constant 32
+push this 5
+call Math.multiply 2
+push this 6
 push constant 16
 call Math.divide 2
 add
@@ -6205,7 +5477,7 @@ push constant 22
 call Sys.wait 1
 pop temp 0
 push this 1
-push constant 1
+push constant 2
 sub
 pop this 1
 push constant 32
@@ -6231,14 +5503,29 @@ return
 function Jet.move_down 0
 push argument 0
 pop pointer 0
-push constant 32
 push pointer 0
 push this 1
 call Jet.trans_x_2jet 2
-call Math.multiply 2
+pop this 5
 push pointer 0
 push this 2
 call Jet.trans_y_2jet 2
+pop this 6
+push this 5
+push constant 50
+add
+push constant 255
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 0
+return
+label IF_FALSE0
+push constant 32
+push this 5
+call Math.multiply 2
+push this 6
 push constant 16
 call Math.divide 2
 add
@@ -6253,17 +5540,13 @@ not
 if-goto WHILE_END0
 push pointer 0
 push this 3
-call Jet.draw1_d 2
+call Jet.draw_down 2
 pop temp 0
 push constant 22
 call Sys.wait 1
 pop temp 0
-push pointer 0
-push this 3
-call Jet.draw2_d 2
-pop temp 0
 push this 1
-push constant 1
+push constant 2
 add
 pop this 1
 push constant 32

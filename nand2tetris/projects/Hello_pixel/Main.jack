@@ -1,19 +1,33 @@
 class Main {
     function void main() {
         var Jet jet;
+        var char key;
+
         let jet = Jet.new(80, 82);
-        do jet.move_up();
-        do jet.move_up();
-        do jet.move_up();
-        do jet.move_left();
-        do jet.move_left();
-        do jet.move_left();
+        
+        //  char key;
         do jet.move_down();
-        do jet.move_down();
-        do jet.move_down();
+        do jet.move_up();
         do jet.move_right();
-        do jet.move_right();
-        do jet.move_right();
+        do jet.move_left();
+        while(true){
+            // let key = 119;
+            // do Output.printChar(key);
+            let key = Keyboard.keyPressed();
+            let key = key + 32;
+            if(key = 119){
+                do jet.move_up();
+            }
+            if(key = 97){
+                do jet.move_left();
+            }
+            if(key = 115){
+                do jet.move_down();
+            }
+            if(key = 100){
+                do jet.move_right();
+            }
+        }
         return;
     }
 }

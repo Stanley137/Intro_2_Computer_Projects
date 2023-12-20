@@ -1,43 +1,72 @@
-function Main.main 1
+function Main.main 2
 push constant 80
 push constant 82
 call Jet.new 2
 pop local 0
 push local 0
-call Jet.move_up 1
-pop temp 0
-push local 0
-call Jet.move_up 1
-pop temp 0
-push local 0
-call Jet.move_up 1
-pop temp 0
-push local 0
-call Jet.move_left 1
-pop temp 0
-push local 0
-call Jet.move_left 1
-pop temp 0
-push local 0
-call Jet.move_left 1
-pop temp 0
-push local 0
 call Jet.move_down 1
 pop temp 0
 push local 0
-call Jet.move_down 1
-pop temp 0
-push local 0
-call Jet.move_down 1
+call Jet.move_up 1
 pop temp 0
 push local 0
 call Jet.move_right 1
 pop temp 0
 push local 0
-call Jet.move_right 1
+call Jet.move_left 1
 pop temp 0
+label WHILE_EXP0
+push constant 0
+not
+not
+if-goto WHILE_END0
+call Keyboard.keyPressed 0
+pop local 1
+push local 1
+push constant 32
+add
+pop local 1
+push local 1
+push constant 119
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push local 0
+call Jet.move_up 1
+pop temp 0
+label IF_FALSE0
+push local 1
+push constant 97
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push local 0
+call Jet.move_left 1
+pop temp 0
+label IF_FALSE1
+push local 1
+push constant 115
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push local 0
+call Jet.move_down 1
+pop temp 0
+label IF_FALSE2
+push local 1
+push constant 100
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
 push local 0
 call Jet.move_right 1
 pop temp 0
+label IF_FALSE3
+goto WHILE_EXP0
+label WHILE_END0
 push constant 0
 return
