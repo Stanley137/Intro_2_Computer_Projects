@@ -1,7 +1,18 @@
 class Main {
     function void main() {
         var Jet jet;
-        let jet = Jet.new(30, 15);
+        let jet = Jet.new(80, 82);
+        do jet.move_up();
+        do jet.move_up();
+        do jet.move_up();
+        do jet.move_left();
+        do jet.move_left();
+        do jet.move_left();
+        do jet.move_down();
+        do jet.move_down();
+        do jet.move_down();
+        do jet.move_right();
+        do jet.move_right();
         do jet.move_right();
         return;
     }
