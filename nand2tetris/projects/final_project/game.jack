@@ -3,6 +3,7 @@ class game {
     field Jet jet; // our flight
     field Map map; // map(building、enemy)
     field int level;
+    var char key;
     constructor game new(){
         let jet = jet.new();
         let map = map.new(0);
@@ -11,8 +12,9 @@ class game {
     }
     method void run () {
         do map.init(level);
-        var char key;
-        while(jet.life != 0){
+        while(jet.life() != 0){
+            // bullet on the above
+            // move is at the bottom
             let key = Keyboard.keyPressed();
             
         }
